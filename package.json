@@ -1,5 +1,6 @@
 {
   "name": "mukticoders-website",
+  "homepage": "https://mukticoders.github.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
