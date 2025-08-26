@@ -1,1 +1,150 @@
 @import "tailwindcss";
+
+
+
+@theme {
+    --leftSide-500: #ffffe4;
+    --middleSide-500: #f1f3dc;
+    --rightSide-500: #ede8d0;
+}
+/* New gradient background */
+body {
+    background-color: var(--leftSide-500); /* Fallback color */
+    background: linear-gradient(to right, var(--leftSide-500), var(--middleSide-500), var(--rightSide-500));
+}
+
+.bg-leftSide {
+    background-color: var(--leftSide-500);
+}
+
+.bg-middleSide {
+    background-color: var(--middleSide-500);
+}
+
+.bg-rightSide {
+    background-color: var(--rightSide-500);
+}
+
+
+/* General text Font stylingg */
+.headerText {
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subHeaderText {
+  font-family: "DM Sans", sans-serif;
+  
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* General container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 28px;
+  }
+  
+  /* Left Side Styling */
+  .left-side {
+    width: 70%;
+    padding-right: 20px;
+  }
+  
+  .howWeWork {
+    border: 1px solid #cacaca;
+  }
+  
+  
+  .stages {
+    max-height: 450px;
+    max-width: 100%;
+
+    overflow-y: scroll;
+    padding-right: 10px;
+  
+    /* Hide the scrollbar */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  .stages::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  
+  .stage-box {
+    background: linear-gradient(-60deg, #EDE8D0,#93d2f0, #EDE8D0 );
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  /* Right Side Styling */
+  .right-side {
+    width: 700px;
+  }
+  
+  .right-side img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  /* General Styling for the Main Container */
+.main-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+
+.joinUsBg {
+  background: linear-gradient(-45deg, #EDE8D0,#93d2f0, #EDE8D0);
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 50px;
+  border: 1px solid #BABABA;
+}
+
+.glow-shadow {
+  box-shadow: 4px 4px 10px rgba(0, 150, 255, 0.5);
+  border-radius: 12px;
+  background: #f0f4c3; /* Light green background */
+}
+
+
+.border-stage-box {
+  border: 1px solid rgba(255, 255, 255, 35%);
+}
+
+.bg-stage-box {
+  background: rgba(255, 255, 255, 42%);
+}
+
+.techBox {
+  border-top-right-radius: 100px;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.bg-gradient{
+  background: linear-gradient(-35deg, #EDE8D0,#EDE8D0, #93d2f0, #EDE8D0, #EDE8D0);
+}
